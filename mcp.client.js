@@ -19,3 +19,7 @@ async function startClient() {
   }
 }
 startClient();
+
+client.listTools().then((tools) => {
+  console.log("Available tools:", tools);
+});
